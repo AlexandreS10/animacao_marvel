@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Avengers";
+  src: url("/fonts/AVENGEANCE\ HEROIC\ AVENGER.ttf"),
+    url("/fonts/AVENGEANCE\ HEROIC\ AVENGER\ AT.ttf"),
+    url("/fonts/AVENGEANCE\ HEROIC\ AVENGER\ BD.ttf"),
+    url("/fonts/AVENGEANCE\ HEROIC\ AVENGER\ BI.ttf");
+}
+p{
+  font-family: "Avengers";
+  font-size: 1cm;
+}
+body {
+  background-image: url("https://img.freepik.com/fotos-gratis/fundo-abstrato-futurista-com-luzes-de-neon-brilhantes_181624-10997.jpg?t=st=1685645176~exp=1685645776~hmac=b3a008cc4aac9221c5fa5b582972e8d3bfafd38c87fc3250600dcc9fce5a3b4a");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#avenger {
+  width: 600px;
+  height: 150px;
+  
+}
+.data {
+  color: rgba(12, 12, 12, 0.705);
+ 
+}
+
+.animacao {
+  width: 500px;
+  height: 510px;
+  animation: trocar 15s infinite;
+}
+
+#azinhoLadoDireito {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.azinho {
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes trocar {
+  0% {
+    background-image: url("/images/hulk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  12.5% {
+    background-image: url("/images/iron-man.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  25% {
+    background-image: url("/images/capt_America.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  37.5% {
+    background-image: url("/images/man_spider.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50% {
+    background-image: url("/images/arqueiro-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  62.5% {
+    background-image: url("/images/scarlett-johansson.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  75% {
+    background-image: url("/images/nick-fury.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+  100% {
+    background-image: url("/images/thanos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/* Estilos para telas grandes */
+@media screen and (min-width: 1200px) {
+  #avenger {
+    width: 500px;
+    height: 150px;
+  }
+
+  .animacao {
+    width: 500px;
+    height: 550px;
+  }
+
+  .azinho {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Estilos para telas médias */
+@media screen and (max-width: 1199px) {
+  #avenger {
+    width: 400px;
+    height: 100px;
+  }
+
+  .animacao {
+    width: 300px;
+    height: 306px;
+  }
+
+  .azinho {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 767px) {
+  #avenger {
+    width: 300px;
+    height: 75px;
+  }
+
+  .animacao {
+    width: 200px;
+    height: 204px;
+  }
+
+  .azinho {
+    width: 60px;
+    height: 60px;
+  }
+}
